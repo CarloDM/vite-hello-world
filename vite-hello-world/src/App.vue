@@ -1,11 +1,14 @@
 
 <script>
-import appTitle from './components/appTitle.vue'
+import appTitle from './components/appTitle.vue';
+import pseudojumbo from './components/hero.vue';
 
 export default {
   name: 'app',
   components : {
+    pseudojumbo,
     appTitle,
+
   },
   data(){
     return{
@@ -17,6 +20,7 @@ export default {
 </script>
 
 <template>
+  <pseudojumbo />
   <h1>{{ message }}</h1>
   <appTitle />
 </template>
