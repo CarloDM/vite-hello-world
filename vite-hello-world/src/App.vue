@@ -1,10 +1,16 @@
 
 <script>
+import appTitle from './components/appTitle.vue'
+
 export default {
   name: 'app',
+  components : {
+    appTitle,
+  },
   data(){
     return{
-      message :'ciao Vite!'
+      message :'ciao Vite!',
+      
     }
   }
 }
@@ -12,6 +18,7 @@ export default {
 
 <template>
   <h1>{{ message }}</h1>
+  <appTitle />
 </template>
 
 <style scoped>
