@@ -3,7 +3,7 @@
 import appTitle from './components/appTitle.vue';
 import pseudojumbo from './components/hero.vue';
 
-export default {
+export default{
   name: 'app',
   components : {
     pseudojumbo,
